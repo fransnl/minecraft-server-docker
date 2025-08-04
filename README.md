@@ -1,3 +1,4 @@
 ﻿# minecraft-server-docker
-# create docker network named "proxy"
+create docker network named "proxy"
+
 
