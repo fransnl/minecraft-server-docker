@@ -1,0 +1,15 @@
+global:
+  checkNewVersion: false
+  sendAnonymousUsage: false
+log:
+  level: ERROR
+api:
+  dashboard: true
+  insecure: true
+entryPoints:
+  minecraft:
+    address: ":25565/tcp"
+providers:
+  docker:
+    endpoint: unix:///var/run/docker.sock
+    exposedByDefault: false

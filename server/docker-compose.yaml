@@ -1,0 +1,21 @@
+services:
+  minecraft:
+    container_name: "minecraft"
+    image: "itzg/minecraft-server:java17"
+    tty: true
+    volumes:
+      - "./mods:/mods"
+      - "./data:/data"
+    ports:
+      - "42069:25565"
+    environment:
+      EULA: "true"
+      VERSION: "1.20.1"
+      TYPE: "FORGE"
+      MEMORY: "5G"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mcrouter.rule=Host(`localhost`)"
+networks:
+  proxy:
+    external: true
