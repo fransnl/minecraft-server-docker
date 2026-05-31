@@ -3,9 +3,9 @@ A quickstart for a minecraft server using docker, itzg/minecraft-server and trae
 
 ## Steps to start
 * Create docker network named "proxy"
-* Run **docker compose up** in proxy folder
+* Run ***docker compose up*** in proxy folder
 * Add desired mods in /server/mods folder
 * Change docker compose file to desired minecraft version, modloader etc
-* Run **docker compose up** in server folder
+* Run ***docker compose up*** in server folder
 
 
